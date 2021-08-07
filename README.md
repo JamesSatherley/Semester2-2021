@@ -1,15 +1,15 @@
 # Semester2-2021
-This is collation of all of my work during 2021 Semester 1
+This is collation of all of my work during 2021 Semester 2
 
 Different courses are differenctiated by different languages. Some courses require tutorials and others, just assignments. Below is a list of courses:
 
-C#:   https://www.massey.ac.nz/massey/learning/programme-course/course.cfm?course_code=158212
+Web:  https://www.massey.ac.nz/massey/learning/programme-course/course.cfm?course_code=158256
 
-SQL:  https://www.massey.ac.nz/massey/learning/programme-course/course.cfm?course_code=158247
+C:    https://www.massey.ac.nz/massey/learning/programme-course/course.cfm?course_code=159270
 
-Java: https://www.massey.ac.nz/massey/learning/programme-course/course.cfm?course_code=159272
+Java: https://www.massey.ac.nz/massey/learning/programme-course/course.cfm?course_code=159251
 
-Py:   https://www.massey.ac.nz/massey/learning/programme-course/course.cfm?course_code=159271
+n/a:  https://www.massey.ac.nz/massey/learning/programme-course/course.cfm?course_code=281282
 
 
 
