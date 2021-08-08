@@ -1,0 +1,5 @@
+NOP: 17
+NOM: 2286
+LOC: LevenshteinDetailedDistanceTest
+CBC: org.apache.commons.text, org.apache.commons.text.lookup
+CCV: StringSubstitutorReader

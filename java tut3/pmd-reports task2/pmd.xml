@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.29.0" timestamp="2021-08-08T20:08:35.273">
+<file name="C:\Users\James\Desktop\Semester2-2021\java tut3\commons-text\src\main\java\org\apache\commons\text\RandomStringGenerator.java">
+<violation beginline="85" endline="85" begincolumn="44" endcolumn="97" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.apache.commons.text" class="RandomStringGenerator$Builder" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+Unnecessary use of fully qualified name 'org.apache.commons.text.Builder' due to existing same package import 'org.apache.commons.text.*'
+</violation>
+</file>
+<file name="C:\Users\James\Desktop\Semester2-2021\java tut3\commons-text\src\main\java\org\apache\commons\text\StrBuilder.java">
+<violation beginline="2034" endline="2034" begincolumn="13" endcolumn="21" rule="AvoidBranchingStatementAsLastInLoop" ruleset="Error Prone" package="org.apache.commons.text" class="StrBuilder" method="indexOf" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_errorprone.html#avoidbranchingstatementaslastinloop" priority="2">
+Avoid using a branching statement as the last in a loop.
+</violation>
+<violation beginline="2376" endline="2376" begincolumn="17" endcolumn="25" rule="AvoidBranchingStatementAsLastInLoop" ruleset="Error Prone" package="org.apache.commons.text" class="StrBuilder" method="lastIndexOf" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_errorprone.html#avoidbranchingstatementaslastinloop" priority="2">
+Avoid using a branching statement as the last in a loop.
+</violation>
+</file>
+<file name="C:\Users\James\Desktop\Semester2-2021\java tut3\commons-text\src\main\java\org\apache\commons\text\StrLookup.java">
+<violation beginline="137" endline="139" begincolumn="19" endcolumn="17" rule="EmptyCatchBlock" ruleset="Error Prone" package="org.apache.commons.text" class="StrLookup$SystemPropertiesStrLookup" method="lookup" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_errorprone.html#emptycatchblock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+<file name="C:\Users\James\Desktop\Semester2-2021\java tut3\commons-text\src\main\java\org\apache\commons\text\TextStringBuilder.java">
+<violation beginline="2031" endline="2031" begincolumn="13" endcolumn="21" rule="AvoidBranchingStatementAsLastInLoop" ruleset="Error Prone" package="org.apache.commons.text" class="TextStringBuilder" method="indexOf" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_errorprone.html#avoidbranchingstatementaslastinloop" priority="2">
+Avoid using a branching statement as the last in a loop.
+</violation>
+<violation beginline="2364" endline="2364" begincolumn="17" endcolumn="25" rule="AvoidBranchingStatementAsLastInLoop" ruleset="Error Prone" package="org.apache.commons.text" class="TextStringBuilder" method="lastIndexOf" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_errorprone.html#avoidbranchingstatementaslastinloop" priority="2">
+Avoid using a branching statement as the last in a loop.
+</violation>
+</file>
+<file name="C:\Users\James\Desktop\Semester2-2021\java tut3\commons-text\src\main\java\org\apache\commons\text\WordUtils.java">
+<violation beginline="383" endline="383" begincolumn="54" endcolumn="108" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.text" class="WordUtils" method="initials" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+<file name="C:\Users\James\Desktop\Semester2-2021\java tut3\commons-text\src\main\java\org\apache\commons\text\numbers\ParsedDecimal.java">
+<violation beginline="222" endline="222" begincolumn="20" endcolumn="38" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.text.numbers" class="ParsedDecimal" method="parseExponent" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="624" endline="625" begincolumn="50" endcolumn="75" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.text.numbers" class="ParsedDecimal" method="shouldRoundUp" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+<file name="C:\Users\James\Desktop\Semester2-2021\java tut3\commons-text\src\main\java\org\apache\commons\text\similarity\IntersectionSimilarity.java">
+<violation beginline="171" endline="171" begincolumn="29" endcolumn="41" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.text.similarity" class="IntersectionSimilarity" method="apply" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="179" endline="179" begincolumn="29" endcolumn="79" rule="UselessParentheses" ruleset="Code Style" package="org.apache.commons.text.similarity" class="IntersectionSimilarity" method="apply" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+</pmd>

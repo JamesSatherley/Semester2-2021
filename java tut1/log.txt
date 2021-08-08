@@ -1,0 +1,489 @@
+Microsoft Windows [Version 10.0.19042.1110]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\WINDOWS\system32>git --version
+git version 2.32.0.windows.2
+
+C:\WINDOWS\system32>git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+C:\WINDOWS\system32>git config --global user.name "Your Name"
+
+C:\WINDOWS\system32>git config --global user.name "James"
+
+C:\WINDOWS\system32>git config --global user.email "jamesrsatherley@gmail.com
+
+C:\WINDOWS\system32>git config --global user.email "jamesrsatherley@gmail.com"
+
+C:\WINDOWS\system32>git config --global user.email "jamesrsatherley@gmail.com
+
+C:\WINDOWS\system32>
+C:\WINDOWS\system32>git config --global user.ema
+
+C:\WINDOWS\system32>khbadwd
+'khbadwd' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\WINDOWS\system32>git config --global user.email "jamesrsatherley@gmail.com"
+
+C:\WINDOWS\system32>mkdir tut1project
+
+C:\WINDOWS\system32>cd tut1project
+
+C:\Windows\System32\tut1project>git init
+Initialized empty Git repository in C:/Windows/System32/tut1project/.git/
+
+C:\Windows\System32\tut1project>git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+C:\Windows\System32\tut1project>git add leapYear.java
+warning: LF will be replaced by CRLF in leapYear.java.
+The file will have its original line endings in your working directory
+
+C:\Windows\System32\tut1project>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   leapYear.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Greeter.java
+        MessagesBundle_en_NZ.properties
+        MessagesBundle_mi_NZ.properties
+
+
+C:\Windows\System32\tut1project>git ls-files
+leapYear.java
+
+C:\Windows\System32\tut1project>git ls-files --others
+Greeter.java
+MessagesBundle_en_NZ.properties
+MessagesBundle_mi_NZ.properties
+
+C:\Windows\System32\tut1project>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   leapYear.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Greeter.java
+        MessagesBundle_en_NZ.properties
+        MessagesBundle_mi_NZ.properties
+
+
+C:\Windows\System32\tut1project>git add Greeter.java
+warning: LF will be replaced by CRLF in Greeter.java.
+The file will have its original line endings in your working directory
+
+C:\Windows\System32\tut1project>git add MessagesBundle_en_NZ.properties
+warning: LF will be replaced by CRLF in MessagesBundle_en_NZ.properties.
+The file will have its original line endings in your working directory
+
+C:\Windows\System32\tut1project>git add MessagesBundle_mi_NZ.properties
+warning: LF will be replaced by CRLF in MessagesBundle_mi_NZ.properties.
+The file will have its original line endings in your working directory
+
+C:\Windows\System32\tut1project>git ls-files
+Greeter.java
+MessagesBundle_en_NZ.properties
+MessagesBundle_mi_NZ.properties
+leapYear.java
+
+C:\Windows\System32\tut1project>git ls-files --others
+
+C:\Windows\System32\tut1project>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Greeter.java
+        new file:   MessagesBundle_en_NZ.properties
+        new file:   MessagesBundle_mi_NZ.properties
+        new file:   leapYear.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+
+C:\Windows\System32\tut1project>git add .gitignore
+
+C:\Windows\System32\tut1project>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
+        new file:   Greeter.java
+        new file:   MessagesBundle_en_NZ.properties
+        new file:   MessagesBundle_mi_NZ.properties
+        new file:   leapYear.java
+
+
+C:\Windows\System32\tut1project>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
+        new file:   Greeter.java
+        new file:   MessagesBundle_en_NZ.properties
+        new file:   MessagesBundle_mi_NZ.properties
+        new file:   leapYear.java
+
+
+C:\Windows\System32\tut1project>git commit -m "First commit"
+[master (root-commit) c5307bd] First commit
+ 5 files changed, 48 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 Greeter.java
+ create mode 100644 MessagesBundle_en_NZ.properties
+ create mode 100644 MessagesBundle_mi_NZ.properties
+ create mode 100644 leapYear.java
+
+C:\Windows\System32\tut1project>git log --al --online --graph --decorate
+fatal: unrecognized argument: --al
+
+C:\Windows\System32\tut1project>git log --all --online --graph --decorate
+fatal: unrecognized argument: --online
+
+C:\Windows\System32\tut1project>git log --all --oneline --graph --decorate
+* c5307bd (HEAD -> master) First commit
+
+C:\Windows\System32\tut1project>git tag -a v1.0 -m "First Version 1.0"
+
+C:\Windows\System32\tut1project>git tag
+v1.0
+
+C:\Windows\System32\tut1project>git branch issue-1
+
+C:\Windows\System32\tut1project>git log -all --oneline --graph --decorate
+error: switch `l' expects a numerical value
+
+C:\Windows\System32\tut1project>git log --all --oneline --graph --decorate
+* c5307bd (HEAD -> master, tag: v1.0, issue-1) First commit
+
+C:\Windows\System32\tut1project>git branch
+  issue-1
+* master
+
+C:\Windows\System32\tut1project>git chechout issue-1
+git: 'chechout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+C:\Windows\System32\tut1project>git checkout issue-1
+Switched to branch 'issue-1'
+
+C:\Windows\System32\tut1project>git log --all --oneline --graph --decorate
+* c5307bd (HEAD -> issue-1, tag: v1.0, master) First commit
+
+C:\Windows\System32\tut1project>git diff Greeter.java
+
+C:\Windows\System32\tut1project>git status
+On branch issue-1
+nothing to commit, working tree clean
+
+C:\Windows\System32\tut1project>git diff Greeter.java
+warning: LF will be replaced by CRLF in Greeter.java.
+The file will have its original line endings in your working directory
+diff --git a/Greeter.java b/Greeter.java
+index 8afc84b..ad6f12c 100644
+--- a/Greeter.java
++++ b/Greeter.java
+@@ -1,5 +1,6 @@
+ import java.util.Locale;
+ import java.util.ResourceBundle;
++import java.util.Scanner;
+
+ public class Greeter {
+
+@@ -19,7 +20,9 @@ public class Greeter {
+   public static void main(String[] args) {
+     String language = args[0];
+     String country = args[1];
+-    String name = args[2];
++    Scanner sc= new Scanner(System.in);
++    System.out.print("Enter name: ");
++    String name = sc.nextLine();
+     Greeter greeter = new Greeter(language, country, name);
+     System.out.println(greeter.sayHello());
+   }
+
+C:\Windows\System32\tut1project>git add Greeter.java
+warning: LF will be replaced by CRLF in Greeter.java.
+The file will have its original line endings in your working directory
+
+C:\Windows\System32\tut1project>git commit -m "Fixed bug"
+[issue-1 239e453] Fixed bug
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+C:\Windows\System32\tut1project>git log --all --oneline --graph --decorate
+* 239e453 (HEAD -> issue-1) Fixed bug
+* c5307bd (tag: v1.0, master) First commit
+
+C:\Windows\System32\tut1project>git checkout master
+Switched to branch 'master'
+
+C:\Windows\System32\tut1project>git merge issue-1
+Updating c5307bd..239e453
+Fast-forward
+ Greeter.java | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+C:\Windows\System32\tut1project>git log --all --oneline --graph --decorate
+* 239e453 (HEAD -> master, issue-1) Fixed bug
+* c5307bd (tag: v1.0) First commit
+
+C:\Windows\System32\tut1project>git branch -d issue-1
+Deleted branch issue-1 (was 239e453).
+
+C:\Windows\System32\tut1project>git log --all --oneline --graph --decorate
+* 239e453 (HEAD -> master) Fixed bug
+* c5307bd (tag: v1.0) First commit
+
+C:\Windows\System32\tut1project>git branch feature-1
+
+C:\Windows\System32\tut1project>git branch feature-2
+
+C:\Windows\System32\tut1project>git checkout feature-1
+Switched to branch 'feature-1'
+
+C:\Windows\System32\tut1project>git diff Greeter.java
+warning: LF will be replaced by CRLF in Greeter.java.
+The file will have its original line endings in your working directory
+diff --git a/Greeter.java b/Greeter.java
+index ad6f12c..8f93d88 100644
+--- a/Greeter.java
++++ b/Greeter.java
+@@ -14,7 +14,7 @@ public class Greeter {
+
+   public String sayHello() {
+     ResourceBundle messages = ResourceBundle.getBundle("MessagesBundle", locale);
+-    return messages.getString("greeting") + ", " + name;
++    return messages.getString("greeting") + ", " + name.toUpperCase();
+   }
+
+   public static void main(String[] args) {
+
+C:\Windows\System32\tut1project>git add Greeter.java
+warning: LF will be replaced by CRLF in Greeter.java.
+The file will have its original line endings in your working directory
+
+C:\Windows\System32\tut1project>git commit -m "Added feature 1"
+[feature-1 a94d05f] Added feature 1
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Windows\System32\tut1project>git checkout feature-2
+Switched to branch 'feature-2'
+
+C:\Windows\System32\tut1project>git diff Greeter.java
+warning: LF will be replaced by CRLF in Greeter.java.
+The file will have its original line endings in your working directory
+diff --git a/Greeter.java b/Greeter.java
+index ad6f12c..b519727 100644
+--- a/Greeter.java
++++ b/Greeter.java
+@@ -14,7 +14,7 @@ public class Greeter {
+
+   public String sayHello() {
+     ResourceBundle messages = ResourceBundle.getBundle("MessagesBundle", locale);
+-    return messages.getString("greeting") + ", " + name;
++    return messages.getString("greeting") + ", " + '"_"+name+"_";'
+   }
+
+   public static void main(String[] args) {
+
+C:\Windows\System32\tut1project>git add Greeter.java
+warning: LF will be replaced by CRLF in Greeter.java.
+The file will have its original line endings in your working directory
+
+C:\Windows\System32\tut1project>git commit -m "Added feature 2"
+[feature-2 0ababe5] Added feature 2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Windows\System32\tut1project>git checkout master
+Switched to branch 'master'
+
+C:\Windows\System32\tut1project>git merge feature-1
+Updating 239e453..a94d05f
+Fast-forward
+ Greeter.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Windows\System32\tut1project>git log --all --oneline --graph --decorate
+* 0ababe5 (feature-2) Added feature 2
+| * a94d05f (HEAD -> master, feature-1) Added feature 1
+|/
+* 239e453 Fixed bug
+* c5307bd (tag: v1.0) First commit
+
+C:\Windows\System32\tut1project>git branch --merged
+  feature-1
+* master
+
+C:\Windows\System32\tut1project>git merge feature-2
+Auto-merging Greeter.java
+CONFLICT (content): Merge conflict in Greeter.java
+Automatic merge failed; fix conflicts and then commit the result.
+
+C:\Windows\System32\tut1project>git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   Greeter.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Windows\System32\tut1project>git add Greeter.java
+warning: LF will be replaced by CRLF in Greeter.java.
+The file will have its original line endings in your working directory
+
+C:\Windows\System32\tut1project>git commit
+hint: Waiting for your editor to close the file...
+[main 2021-07-21T23:59:36.613Z] window: using vscode-file:// protocol and V8 cache options: bypassHeatCheck
+[main 2021-07-21T23:59:36.733Z] update#setState idle
+[master 36667d9] Merge branch 'feature-2'
+
+C:\Windows\System32\tut1project>git tag -a v1.1 -m "Two new features, version 1.1"
+
+C:\Windows\System32\tut1project>git remote add origin https://github.com/JamesSatherley/19040618-tut1.git
+
+C:\Windows\System32\tut1project>git push --all origin
+
+Unhandled Exception: System.ComponentModel.Win32Exception: The directory name is invalid
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at Microsoft.Git.CredentialManager.GitProcessConfiguration.TryGet(GitConfigurationLevel level, String name, String& value)
+   at Microsoft.Git.CredentialManager.Settings.<GetSettingValues>d__4.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at Microsoft.Git.CredentialManager.Settings.get_CredentialNamespace()
+   at Microsoft.Git.CredentialManager.CommandContext..ctor(String appPath)
+   at Microsoft.Git.CredentialManager.Program.Main(String[] args)
+Username for 'https://github.com': JamesSatherley
+Password for 'https://JamesSatherley@github.com':
+
+Unhandled Exception: System.ComponentModel.Win32Exception: The directory name is invalid
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at Microsoft.Git.CredentialManager.GitProcessConfiguration.TryGet(GitConfigurationLevel level, String name, String& value)
+   at Microsoft.Git.CredentialManager.Settings.<GetSettingValues>d__4.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at Microsoft.Git.CredentialManager.Settings.get_CredentialNamespace()
+   at Microsoft.Git.CredentialManager.CommandContext..ctor(String appPath)
+   at Microsoft.Git.CredentialManager.Program.Main(String[] args)
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (19/19), 1.93 KiB | 659.00 KiB/s, done.
+Total 19 (delta 9), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (9/9), done.
+To https://github.com/JamesSatherley/19040618-tut1.git
+ * [new branch]      feature-1 -> feature-1
+ * [new branch]      feature-2 -> feature-2
+ * [new branch]      master -> master
+
+C:\Windows\System32\tut1project>git push origin --tags
+
+Unhandled Exception: System.ComponentModel.Win32Exception: The directory name is invalid
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at Microsoft.Git.CredentialManager.GitProcessConfiguration.TryGet(GitConfigurationLevel level, String name, String& value)
+   at Microsoft.Git.CredentialManager.Settings.<GetSettingValues>d__4.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at Microsoft.Git.CredentialManager.Settings.get_CredentialNamespace()
+   at Microsoft.Git.CredentialManager.CommandContext..ctor(String appPath)
+   at Microsoft.Git.CredentialManager.Program.Main(String[] args)
+Username for 'https://github.com': JamesSatherley
+Password for 'https://JamesSatherley@github.com':
+
+Unhandled Exception: System.ComponentModel.Win32Exception: The directory name is invalid
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at Microsoft.Git.CredentialManager.GitProcessConfiguration.TryGet(GitConfigurationLevel level, String name, String& value)
+   at Microsoft.Git.CredentialManager.Settings.<GetSettingValues>d__4.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at Microsoft.Git.CredentialManager.Settings.get_CredentialNamespace()
+   at Microsoft.Git.CredentialManager.CommandContext..ctor(String appPath)
+   at Microsoft.Git.CredentialManager.Program.Main(String[] args)
+Enumerating objects: 2, done.
+Counting objects: 100% (2/2), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 310 bytes | 103.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/JamesSatherley/19040618-tut1.git
+ * [new tag]         v1.0 -> v1.0
+ * [new tag]         v1.1 -> v1.1
+
+C:\Windows\System32\tut1project>
