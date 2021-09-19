@@ -23,13 +23,16 @@ import org.apache.log4j.PropertyConfigurator;
  * - number of transactions 
  * @author jens dietrich
  */
+
 public class MergeTransactions {
 
 	private static DateFormat DATE_FORMAT = new SimpleDateFormat("dd-MM-yyyy");
 	private static NumberFormat CURRENCY_FORMAT = NumberFormat.getCurrencyInstance(Locale.getDefault());
-	private static final Logger logger = LogManager.getLogger(MergeTransactions.class);
+	private static final Logger loggerFILE = LogManager.getLogger("FILE");
+	private static final Logger loggerTRANSACTIONS = LogManager.getLogger("TRANSACTIONS");
 
 	public static void main(String[] args) {
+		PropertyConfigurator.configure("CONFIG.config");
 		List<Purchase> transactions = new ArrayList<Purchase>();
 		
 		// read data from 4 files
@@ -39,10 +42,10 @@ public class MergeTransactions {
 		readData("src/resources/transactions4.csv",transactions);
 
 		// print some info for the user
-		PropertyConfigurator.configure("TRANSACTION.config");
-		logger.info("" + transactions.size() + " transactions imported");
-		logger.info("total value: " + CURRENCY_FORMAT.format(computeTotalValue(transactions)));
-		logger.info("max value: " + CURRENCY_FORMAT.format(computeMaxValue(transactions)));
+		loggerTRANSACTIONS.info("\n\n\n");
+		loggerTRANSACTIONS.info("" + transactions.size() + " transactions imported");
+		loggerTRANSACTIONS.info("total value: " + CURRENCY_FORMAT.format(computeTotalValue(transactions)));
+		loggerTRANSACTIONS.info("max value: " + CURRENCY_FORMAT.format(computeMaxValue(transactions)));
 	}
 	
 	private static double computeTotalValue(List<Purchase> transactions) {
@@ -67,8 +70,7 @@ public class MergeTransactions {
 		File file = new File(fileName);
 		String line = null;
 		// print info for user
-		PropertyConfigurator.configure("TRANSACTION.config");
-		logger.info("import data from " + fileName);
+		loggerTRANSACTIONS.info("import data from " + fileName);
 		BufferedReader reader = null;
 		try {
 			reader = new BufferedReader(new FileReader(file));
@@ -81,37 +83,31 @@ public class MergeTransactions {
 				);
 				transactions.add(purchase);
 				// this is for debugging only
-				PropertyConfigurator.configure("TRANSACTION.config");
-				logger.debug("imported transaction " + purchase);
+				loggerTRANSACTIONS.debug("imported transaction " + purchase);
 			} 
 		}
 		catch (FileNotFoundException x) {
 			// print warning
-			PropertyConfigurator.configure("FILE.config");
-			logger.warn("file " + fileName + " does not exist - skip");
+			loggerFILE.warn("file " + fileName + " does not exist - skip");
 		}
 		catch (IOException x) {
 			// print error message and details
-			PropertyConfigurator.configure("FILE.config");
-			logger.error("problem reading file " + fileName);
+			loggerFILE.error("problem reading file " + fileName);
 		}
 		// happens if date parsing fails
 		catch (ParseException x) { 
 			// print error message and details
-			PropertyConfigurator.configure("FILE.config");
-			logger.error("cannot parse date from string - please check whether syntax is correct: " + line);
+			loggerFILE.error("cannot parse date from string - please check whether syntax is correct: " + line);
 		}
 		// happens if double parsing fails
 		catch (NumberFormatException x) {
 			// print error message and details
-			PropertyConfigurator.configure("FILE.config");
-			logger.error("cannot parse double from string - please check whether syntax is correct: " + line);
+			loggerFILE.error("cannot parse double from string - please check whether syntax is correct: " + line);
 		}
 		catch (Exception x) {
 			// any other exception 
 			// print error message and details
-			PropertyConfigurator.configure("FILE.config");
-			logger.error("exception reading data from file " + fileName + ", line: " + line);
+			loggerFILE.error("exception reading data from file " + fileName + ", line: " + line);
 		}
 		finally {
 			try {
@@ -120,8 +116,7 @@ public class MergeTransactions {
 				}
 			} catch (IOException e) {
 				// print error message and details
-				PropertyConfigurator.configure("FILE.config");
-				logger.error("cannot close reader used to access " + fileName);
+				loggerFILE.error("cannot close reader used to access " + fileName);
 			}
 		}
 	}

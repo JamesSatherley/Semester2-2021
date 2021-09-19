@@ -1,0 +1,4 @@
+2021-09-19 16:55:01,895,[loggingTutorial.MergeTransactions.main()],ERROR,FILE,cannot parse date from string - please check whether syntax is correct: Animates,4,13/5/2012
+2021-09-19 16:55:01,903,[loggingTutorial.MergeTransactions.main()],WARN ,FILE,file src/resources/transactions4.csv does not exist - skip
+2021-09-19 22:39:33,856,[loggingTutorial.MergeTransactions.main()],ERROR,FILE,cannot parse date from string - please check whether syntax is correct: Animates,4,13/5/2012
+2021-09-19 22:39:33,857,[loggingTutorial.MergeTransactions.main()],WARN ,FILE,file src/resources/transactions4.csv does not exist - skip
