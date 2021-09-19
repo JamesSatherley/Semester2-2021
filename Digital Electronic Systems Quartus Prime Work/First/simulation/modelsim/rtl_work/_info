@@ -1,0 +1,93 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/James - Desktop/Desktop/uni/2021/Semester2-2021/Digital Electronic Systems Quartus Prime Work/simulation/modelsim
+Efirst
+Z1 w1631138118
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z4 8C:/Users/James - Desktop/Desktop/uni/2021/Semester2-2021/Digital Electronic Systems Quartus Prime Work/First.vhd
+Z5 FC:/Users/James - Desktop/Desktop/uni/2021/Semester2-2021/Digital Electronic Systems Quartus Prime Work/First.vhd
+l0
+L4 1
+V7l?V0OTGAQQeUiSQPX6Ke2
+!s100 i4PIRO]gC>5C:n`k=fn1Q1
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1631138931
+!i10b 1
+Z8 !s108 1631138931.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/James - Desktop/Desktop/uni/2021/Semester2-2021/Digital Electronic Systems Quartus Prime Work/First.vhd|
+Z10 !s107 C:/Users/James - Desktop/Desktop/uni/2021/Semester2-2021/Digital Electronic Systems Quartus Prime Work/First.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Acomb
+R2
+R3
+DEx4 work 5 first 0 22 7l?V0OTGAQQeUiSQPX6Ke2
+!i122 0
+l15
+L12 8
+Vk1IEkjz[MzTBehb8TEe_N3
+!s100 _IcR?6b:1>9PM`FD:>6=10
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Efirst_vhd_tst
+Z13 w1631138749
+R2
+R3
+!i122 1
+R0
+Z14 8C:/Users/James - Desktop/Desktop/uni/2021/Semester2-2021/Digital Electronic Systems Quartus Prime Work/simulation/modelsim/First.vht
+Z15 FC:/Users/James - Desktop/Desktop/uni/2021/Semester2-2021/Digital Electronic Systems Quartus Prime Work/simulation/modelsim/First.vht
+l0
+L31 1
+VM5`LGjNT4RT3JiSjN:`CS1
+!s100 :I41@M]GEi[Q25aU2MFLk1
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/James - Desktop/Desktop/uni/2021/Semester2-2021/Digital Electronic Systems Quartus Prime Work/simulation/modelsim/First.vht|
+!s107 C:/Users/James - Desktop/Desktop/uni/2021/Semester2-2021/Digital Electronic Systems Quartus Prime Work/simulation/modelsim/First.vht|
+!i113 1
+R11
+R12
+Afirst_arch
+R2
+R3
+DEx4 work 13 first_vhd_tst 0 22 M5`LGjNT4RT3JiSjN:`CS1
+!i122 1
+l48
+L33 57
+VV@Q0j?;?ATMO=0WG5:R4c2
+!s100 2df^cOdRm]DKFN;^lR5:M1
+R6
+31
+R7
+!i10b 1
+R8
+R16
+Z17 !s107 C:/Users/James - Desktop/Desktop/uni/2021/Semester2-2021/Digital Electronic Systems Quartus Prime Work/simulation/modelsim/First.vht|
+!i113 1
+R11
+R12

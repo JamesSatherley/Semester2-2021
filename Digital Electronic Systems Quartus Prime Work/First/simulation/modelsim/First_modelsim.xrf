@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/James - Desktop/Desktop/uni/2021/Semester2-2021/Digital Electronic Systems Quartus Prime Work/simulation/modelsim/First.vht
+source_file = 1, C:/Users/James - Desktop/Desktop/uni/2021/Semester2-2021/Digital Electronic Systems Quartus Prime Work/First.vhd
+source_file = 1, d:/stupidfuckingprogramfuckintel/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, d:/stupidfuckingprogramfuckintel/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, d:/stupidfuckingprogramfuckintel/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, d:/stupidfuckingprogramfuckintel/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/James - Desktop/Desktop/uni/2021/Semester2-2021/Digital Electronic Systems Quartus Prime Work/db/First.cbx.xml
+design_name = hard_block
+design_name = First
+instance = comp, \f~output\, f~output, First, 1
+instance = comp, \x2~input\, x2~input, First, 1
+instance = comp, \x3~input\, x3~input, First, 1
+instance = comp, \x1~input\, x1~input, First, 1
+instance = comp, \f~0\, f~0, First, 1

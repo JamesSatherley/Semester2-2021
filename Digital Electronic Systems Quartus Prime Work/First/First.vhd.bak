@@ -1,0 +1,15 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity First is
+port (
+x1, x2, x3 : in std_logic;
+f : out std_logic
+);
+end entity First;
+
+architecture comb of First is
+
+begin
+
+end architecture comb;

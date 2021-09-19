@@ -1,0 +1,54 @@
+# Reading pref.tcl
+# do First_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/stupidfuckingprogramfuckintel/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/James - Desktop/Desktop/uni/2021/Semester2-2021/Digital Electronic Systems Quartus Prime Work/First.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:08:51 on Sep 09,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/James - Desktop/Desktop/uni/2021/Semester2-2021/Digital Electronic Systems Quartus Prime Work/First.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity First
+# -- Compiling architecture comb of First
+# End time: 10:08:51 on Sep 09,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/James - Desktop/Desktop/uni/2021/Semester2-2021/Digital Electronic Systems Quartus Prime Work/simulation/modelsim/First.vht}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:08:51 on Sep 09,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/James - Desktop/Desktop/uni/2021/Semester2-2021/Digital Electronic Systems Quartus Prime Work/simulation/modelsim/First.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity First_vhd_tst
+# -- Compiling architecture First_arch of First_vhd_tst
+# End time: 10:08:51 on Sep 09,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  First_vhd_tst
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" First_vhd_tst 
+# Start time: 10:08:51 on Sep 09,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.first_vhd_tst(first_arch)
+# Loading work.first(comb)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+quit -sim
+# End time: 10:17:53 on Sep 09,2021, Elapsed time: 0:09:02
+# Errors: 0, Warnings: 0

@@ -1,0 +1,8 @@
+|First
+x1 => andx12.IN0
+x2 => andx12.IN1
+x2 => andx23.IN0
+x3 => andx23.IN1
+f << f.DB_MAX_OUTPUT_PORT_TYPE
+
+
