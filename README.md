@@ -1,5 +1,5 @@
 # Semester2-2021
-This is collation of all of my work during 2021 Semester 2
+This is a collation of all of my work during 2021 Semester 2
 
 Different courses are differenctiated by different languages. Some courses require tutorials and others, just assignments. Below is a list of courses:
 
