@@ -1,0 +1,14 @@
+|counter
+clock => i_count[0].CLK
+clock => i_count[1].CLK
+clock => i_count[2].CLK
+clock => i_count[3].CLK
+reset => ~NO_FANOUT~
+enable => ~NO_FANOUT~
+count[0] <= i_count[0].DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= i_count[1].DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= i_count[2].DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= i_count[3].DB_MAX_OUTPUT_PORT_TYPE
+carry <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
