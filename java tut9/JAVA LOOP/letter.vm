@@ -1,0 +1,11 @@
+
+To<br>
+$person.firstName $person.name ,<br>
+$person.address.number $person.address.street<br>
+$person.address.town<br><br>
+
+Dear $person.firstName,<br>
+    I would like to invite you to a party this Saturday, 8PM at my place.<br>
+Cheers, James<br><br>
+
+----------------------------------------------------------<br><br>
